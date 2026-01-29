@@ -37,6 +37,82 @@
     fetchpriority="high"
     class="hero-img" title="SEO learning website"
   >
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+/* HERO TEXT */
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #0a3d62;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+/* HERO IMAGE */
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
+<link rel="stylesheet" href="style.css">
+
 </header>
 
 </head>
