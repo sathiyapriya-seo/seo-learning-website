@@ -1,167 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Technical SEO Guide & Checklist for Beginners</title>
-  <meta name="description" content="Complete technical SEO guide with checklist, tools, and explanations including GSC, GA4, sitemap, robots.txt, redirects, page speed, and mobile SEO.">
+  <title>Technical SEO Guide | SEO Learning Website</title>
+  <meta name="description" content="Technical SEO guide with checklist, tools, and implementation examples.">
   <meta name="robots" content="index, follow">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://sathiyapriya-seo.github.io/seo-learning-website/technical-seo.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Technical SEO Checklist">
-  <meta property="og:description" content="Learn technical SEO concepts, tools, and best practices with real examples">
-  <meta property="og:image" content="https://sathiyapriya-seo.github.io/seo-learning-website/technical-seo-checklist.webp">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Technical SEO Guide">
-  <meta name="twitter:description" content="Technical SEO explained with checklist and tools">
-  <meta name="twitter:image" content=https://sathiyapriya-seo.github.io/seo-learning-website"/technical-seo-checklist.webp">
-
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Technical SEO Guide",
-    "description": "Technical SEO checklist and tools explanation for beginners",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SEO Practice Website"
-    }
-  }
-  </script>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#f9fafb; color:#1f2937; line-height:1.7; }
+    header { background:#fff; padding:15px 40px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+    nav a { color:#2563eb; margin-right:20px; font-weight:bold; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    .container { max-width:1100px; margin:auto; background:#fff; padding:40px 20px; }
+    h1,h2,h3 { color:#111827; }
+    ul { padding-left:20px; }
+    img { max-width:100%; border-radius:10px; margin:20px 0; box-shadow:0 8px 20px rgba(0,0,0,.1); }
+    .box { background:#eff6ff; padding:15px; border-left:5px solid #2563eb; margin:20px 0; }
+    footer { text-align:center; background:#f1f5f9; padding:20px; font-size:14px; }
+  </style>
 </head>
-<body>
 
+<body>
 <header>
-  <h1>Technical SEO – Complete Guide</h1>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="keyword-research.html">Keyword Research</a> |
-    <a href="on-page-seo.html">On-Page SEO</a> |
+    <a href="index.html">Home</a>
+    <a href="keyword-research.html">Keyword Research</a>
+    <a href="on-page-seo.html">On-Page SEO</a>
     <a href="off-page-seo.html">Off-Page SEO</a>
+    <a href="technical-seo.html">Technical SEO</a>
   </nav>
 </header>
 
-<img src="technical-seo-checklist.webp" alt="Technical SEO checklist showing crawling, indexing, sitemap, page speed, and mobile optimization" width="1200" height="600" loading="lazy">
+<main class="container">
+  <h1>Technical SEO</h1>
 
-<main>
+  <p><strong>Technical SEO</strong> focuses on improving the technical aspects of a website to help search engines crawl, index, and rank pages efficiently.</p>
 
-<section>
-  <h2>What is Technical SEO?</h2>
-  <p>Technical SEO is the process of optimizing a website's technical infrastructure to help search engines crawl, index, and rank the website effectively.</p>
-</section>
+  <img src="technical-seo-checklist.webp" alt="Technical SEO Checklist Illustration">
 
-<section>
   <h2>Technical SEO Checklist</h2>
-  <ul>
-    <li>Google Search Console setup</li>
-    <li>Google Analytics 4 integration</li>
-    <li>HTTPS (SSL) enabled</li>
-    <li>XML sitemap submission</li>
-    <li>Robots.txt configuration</li>
-    <li>301 redirect setup</li>
-    <li>Custom 404 page</li>
-    <li>Page speed optimization</li>
-    <li>Mobile-friendly design</li>
-    <li>Fix broken links and duplicate content</li>
-  </ul>
-</section>
 
-<section>
-  <h2>Google Search Console (GSC)</h2>
-  <p>Google Search Console helps monitor indexing status, search performance, errors, and sitemap submission.</p>
-</section>
+  <h3>1. Google Search Console (GSC)</h3>
+  <p>Monitor indexing, coverage errors, and performance.</p>
 
-<section>
-  <h2>Google Analytics 4 (GA4)</h2>
-  <p>GA4 tracks user behavior, page views, engagement, and traffic sources to support SEO decisions.</p>
-</section>
+  <h3>2. Google Analytics 4 (GA4)</h3>
+  <p>Track user behavior and traffic.</p>
 
-<section>
-  <h2>Bing Webmaster Tools</h2>
-  <p>Bing Webmaster Tools helps optimize your site for Bing search engine and identify crawl issues.</p>
-</section>
+  <h3>3. XML Sitemap</h3>
+  <div class="box">
+    Submit sitemap via GSC → Sitemaps
+  </div>
 
-<section>
-  <h2>.htaccess File</h2>
-  <p>The .htaccess file controls server-level SEO settings such as redirects, HTTPS enforcement, and error pages.</p>
-</section>
+  <h3>4. Robots.txt File</h3>
+  <div class="box">
+    User-agent: * <br>
+    Disallow:
+  </div>
 
-<section>
-  <h2>SSL (HTTPS)</h2>
-  <p>SSL encrypts user data and improves website trust and SEO rankings.</p>
-</section>
+  <h3>5. HTTPS / SSL</h3>
+  <p>Secure website using SSL certificate.</p>
 
-<section>
-  <h2>301 vs 302 Redirects</h2>
-  <p>301 redirects are permanent and pass SEO value, while 302 redirects are temporary.</p>
-</section>
+  <h3>6. 301 & 302 Redirects</h3>
+  <p>Use redirects for moved or deleted pages.</p>
 
-<section>
-  <h2>Robots.txt File</h2>
-  <p>Robots.txt controls which pages search engines can crawl. It does not remove pages from index.</p>
-</section>
+  <h3>7. Custom 404 Page</h3>
+  <p>Improve user experience for broken pages.</p>
 
-<section>
-  <h2>Custom 404 Page</h2>
-  <p>A custom 404 page helps users navigate back when a page is missing.</p>
-</section>
+  <h3>8. Page Speed Optimization</h3>
+  <p>Minify CSS, JS, enable compression.</p>
 
-<section>
-  <h2>XML Sitemap</h2>
-  <p>An XML sitemap helps search engines discover and index important pages.</p>
-</section>
+  <h3>9. Mobile-Friendly Test</h3>
+  <p>Ensure responsive design.</p>
 
-<section>
-  <h2>Remove Outdated Content from SERP</h2>
-  <p>Outdated pages can be removed by updating content, redirecting URLs, or requesting removal in GSC.</p>
-</section>
+  <h3>10. Fix Broken Links</h3>
+  <p>Use SEO tools to identify broken URLs.</p>
 
-<section>
-  <h2>Request Indexing for New Pages</h2>
-  <p>Use Google Search Console to request indexing for new or updated pages.</p>
-</section>
+  <h3>11. Duplicate Content Fix</h3>
+  <p>Use canonical tags.</p>
 
-<section>
-  <h2>Fix Broken Links</h2>
-  <p>Broken links harm SEO and user experience. Use SEO tools to find and fix them.</p>
-</section>
+  <h3>12. Remove Outdated Content</h3>
+  <p>Update or delete irrelevant pages.</p>
 
-<section>
-  <h2>Fix Duplicate Content</h2>
-  <p>Duplicate content issues can be fixed using canonical tags or redirects.</p>
-</section>
-
-<section>
-  <h2>Minification Techniques</h2>
-  <p>Minification reduces file sizes of HTML, CSS, and JavaScript to improve page speed.</p>
-</section>
-
-<section>
-  <h2>Page Speed Test</h2>
-  <p>Google PageSpeed Insights measures site performance and Core Web Vitals.</p>
-</section>
-
-<section>
-  <h2>Mobile-Friendly Test</h2>
-  <p>Mobile-friendly websites rank better due to mobile-first indexing.</p>
-</section>
-
-<section>
-  <h2>Disallow Explanation</h2>
-  <p>Disallow blocks search engines from crawling specific URLs but does not remove indexed pages.</p>
-</section>
+  <h3>13. Request Indexing</h3>
+  <p>Use URL inspection in GSC.</p>
 
 </main>
 
 <footer>
-  <p>© 2026 SEO Practice Website</p>
+  © 2026 SEO Learning Website | Created by Sathiyapriya
 </footer>
-
 </body>
 </html>
