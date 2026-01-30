@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://sathiyapriya-seo.github.io/</loc>
+    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://sathiyapriya-seo.github.io/keyword-research.html</loc>
+    <loc>https://sathiyapriya-seo.github.io/index.html</loc>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://sathiyapriya-seo.github.io/on-page-seo.html</loc>
+    <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://sathiyapriya-seo.github.io/technical-seo.html</loc>
-  </url>
+
   <url>
     <loc>https://sathiyapriya-seo.github.io/off-page-seo.html</loc>
+    <priority>0.9</priority>
   </url>
+
+  <url>
+    <loc>https://sathiyapriya-seo.github.io/technical-seo.html</loc>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
